@@ -62,7 +62,10 @@ const Home = () => {
 
             
 
-            
+            <div className='container mx-auto gallery mb-12 '>
+                <h1 className="text-9xl font-bold title  mb-12 ">PHOTO GALLERY</h1>
+                <ImageGallery></ImageGallery>  
+            </div>
             
         </div>
     );
