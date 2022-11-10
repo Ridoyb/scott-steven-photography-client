@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import toast, { Toaster } from 'react-hot-toast';
 import { Helmet } from 'react-helmet';
@@ -110,7 +110,9 @@ const ServiceDetails = () => {
             }
         </div>
 
-            <div>
+            {
+                user?.email ?(
+                    <div>
             <form onSubmit={addReview} className='mx-auto w-9/12 lg:w-6/12 ' >
 
 
@@ -137,6 +139,15 @@ const ServiceDetails = () => {
                 </div>
             </form>
             </div>
+                ) : (
+                    < >
+                        <div className='text-center'>
+                        <p className="font-bold  uppercase text-3xl text-center mb-12">Login to leave a comment!!!</p>
+                        <Link ><button className='btn btn-outline mb-12'> login</button></Link>
+                        </div>
+                    </>
+                )
+            }
         </div>
     );
 };

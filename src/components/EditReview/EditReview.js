@@ -5,42 +5,38 @@ import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 
 const EditReview = () => {
-    const {user}=useContext(AuthContext)
-    const storedReviews= useLoaderData();
-    const {review}=storedReviews;
-    console.log(review)
-
-    const [newReview, setnewReview] = useState(storedReviews);
-
-    const handleUpdateReview = event =>{
-        event.preventDefault();
+    
+    const storedReview = useLoaderData();
+  
+  const [reviewNew, setReviewNew] = useState(storedReview);
+  //console.log(reviewNew);
+  const handleUpdate = (event) => {
+    event.preventDefault();
         // console.log(user);
-        fetch(`http://localhost:5000/reviews/${storedReviews._id}`, {
+        fetch(`http://localhost:5000/reviews/${storedReview._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(newReview)
+            body: JSON.stringify(reviewNew)
         })
         .then(res => res.json())
         .then(data => {
             if (data.modifiedCount > 0){
-                alert('user updated')
+                alert('Review updated')
                 console.log(data);
             }
             
         })
-    }
-
-      const handleInputChange = event =>{
-        const field = event.target.review;
-        const value = event.target.value;
-        const newReview = {...review}
-        newReview[field] = value;
-        console.log(newReview)
-        setnewReview(newReview);
-        
-    }
+  };
+  const handleInputChange = (event) => {
+    const field = event.target.name;
+    const value = event.target.value;
+    const updateReview = { ...reviewNew };
+    updateReview[field] = value;
+    console.log(updateReview)
+    setReviewNew(updateReview);
+  };
     
     return (
         <div className='mt-8'>
@@ -48,7 +44,7 @@ const EditReview = () => {
                 <title>Blogs</title>
             </Helmet>
             
-            <form onChange={handleUpdateReview} className='mx-auto w-9/12 lg:w-6/12  ' >
+            <form onChange={handleUpdate} className='mx-auto w-9/12 lg:w-6/12  ' >
 
 
                 <div className=" p-8 my-4  container  mx-auto mb-12  rounded-2xl shadow-2xl">
@@ -57,12 +53,12 @@ const EditReview = () => {
                     </div>
                     
                     <div className="my-4">
-                        <textarea  onChange={handleInputChange} name='review'defaultValue={review} placeholder="Your Comment" className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" required></textarea>
+                        <textarea  onChange={handleInputChange} name='review'defaultValue={storedReview.review} placeholder="Your Comment" className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" required></textarea>
                         
                     </div>
                     
                     <div className="form-control mt-6">
-                            <input btn className="btn btn-outline" type="submit" value="SUBMIT" />
+                            <button className="btn btn-outline" type="submit" value="SUBMIT"/>
                      
                     </div>
                 </div>
