@@ -8,46 +8,46 @@ const AddService = () => {
 
     // const { _id, title,img,description, price } = useLoaderData();
     const { user } = useContext(AuthContext);
-    
+
 
 
     //review add handler
-  const addService = (event) => {
-    event.preventDefault();
-    const service_id = event.target.service_id.value;
-    const img = event.target.img.value;
-    const title = event.target.title.value;
-    const price = event.target.price.value;
-    const description = event.target.description.value;
-    const newService = {service_id,title, img,price,description};
-    
-    fetch("http://localhost:5000/services", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newService),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        //console.log(data);
-        if(data.acknowledged){
-          toast.success("New Service Added");
-          event.target.reset();
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+    const addService = (event) => {
+        event.preventDefault();
+        const service_id = event.target.service_id.value;
+        const img = event.target.img.value;
+        const title = event.target.title.value;
+        const price = event.target.price.value;
+        const description = event.target.description.value;
+        const newService = { service_id, title, img, price, description };
+
+        fetch("https://scott-steve-photography-server.vercel.app/services", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newService),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                //console.log(data);
+                if (data.acknowledged) {
+                    toast.success("New Service Added");
+                    event.target.reset();
+                }
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    };
 
 
 
     return (
         <div>
             <Helmet>
-      <title>Add Service</title>
-    </Helmet>
+                <title>Add Service</title>
+            </Helmet>
             <form onSubmit={addService} className='mx-auto w-9/12 lg:w-6/12 ' >
 
 
@@ -67,20 +67,20 @@ const AddService = () => {
                         <input name='price' className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                             type="text" placeholder="Price" required />
 
-                        
+
 
                     </div>
                     <div className="my-4">
                         <textarea name='description' placeholder="Description" className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" required></textarea>
                     </div>
-                    
+
                     <div className="form-control mt-6">
-                            <input className="btn btn-outline" type="submit" value="ADD SERVICE" />
-                     
+                        <input className="btn btn-outline" type="submit" value="ADD SERVICE" />
+
                     </div>
                 </div>
             </form>
-            </div>
+        </div>
     );
 };
 

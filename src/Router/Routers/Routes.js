@@ -14,7 +14,7 @@ import Main from "../../Layout/Main";
 
 const { createBrowserRouter } = require("react-router-dom");
 
-const router= createBrowserRouter([
+const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
@@ -50,22 +50,22 @@ const router= createBrowserRouter([
             {
                 path: 'my-reviews',
                 element: <MyReviews></MyReviews>,
-                loader: ()=>fetch('http://localhost:5000/reviews')
+                loader: () => fetch('https://scott-steve-photography-server.vercel.app/reviews')
             },
             {
                 path: '/services/:id',
-                loader: ({params})=> fetch(`http://localhost:5000/services/${params.id}`),
+                loader: ({ params }) => fetch(`https://scott-steve-photography-server.vercel.app/services/${params.id}`),
                 element: <ServiceDetails></ServiceDetails>,
-                
+
             },
             {
                 path: '/reviews/:id',
-                loader: ({params}) => fetch(`http://localhost:5000/reviews/${params.id}`),
+                loader: ({ params }) => fetch(`https://scott-steve-photography-server.vercel.app/reviews/${params.id}`),
                 element: <EditReview></EditReview>,
-                
+
             },
             { path: '*', element: <Error></Error> }
-            
+
         ]
 
     }

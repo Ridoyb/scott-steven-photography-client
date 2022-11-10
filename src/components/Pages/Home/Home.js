@@ -8,16 +8,16 @@ import { Helmet } from "react-helmet";
 
 
 const Home = () => {
-    
 
-    const [services, setServices]=useState([]);
-    useEffect(()=> {
-        fetch('http://localhost:5000/services-home')
-        .then(res=>res.json())
-        .then(data=> setServices(data));
-    },[])
+
+    const [services, setServices] = useState([]);
+    useEffect(() => {
+        fetch('https://scott-steve-photography-server.vercel.app/services-home')
+            .then(res => res.json())
+            .then(data => setServices(data));
+    }, [])
     return (
-        
+
         <div className='container mx-auto'>
             <Helmet>
                 <title>Home</title>
@@ -34,18 +34,18 @@ const Home = () => {
             </div>
 
             <div className='text-center '>
-                <h1 className="text-9xl font-bold title ">SERVICES</h1> 
+                <h1 className="text-9xl font-bold title ">SERVICES</h1>
                 <div className='grid justify-center m-auto justify-items-center gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 container mx-auto '>
                     {
-                        services.map(service =><HomeCard 
+                        services.map(service => <HomeCard
                             key={service._id}
                             service={service}
-                            ></HomeCard>)
+                        ></HomeCard>)
                     }
-                </div>   
+                </div>
                 <Link to='/services'>
-                    <button className="btn btn-outline mt-12 mb-12 ml-2">VIEW ALL</button> 
-                </Link>      
+                    <button className="btn btn-outline mt-12 mb-12 ml-2">VIEW ALL</button>
+                </Link>
             </div>
 
             <div className="hero  bg-base-100 mt-12 mb-12 container mx-auto">
@@ -55,18 +55,18 @@ const Home = () => {
                         <button className="btn btn-outline mt-8">Contact Me</button>
                     </div>
                     <img src="https://websitedemos.net/photographer-04/wp-content/uploads/sites/507/2019/10/services-03-free-img.png" alt='' className=" hero-image rounded-lg shadow-2xl" />
-                    
+
                 </div>
             </div>
 
 
-            
+
 
             <div className='container mx-auto gallery mb-12 '>
                 <h1 className="text-9xl font-bold title  mb-12 ">PHOTO GALLERY</h1>
-                <ImageGallery></ImageGallery>  
+                <ImageGallery></ImageGallery>
             </div>
-            
+
         </div>
     );
 };
