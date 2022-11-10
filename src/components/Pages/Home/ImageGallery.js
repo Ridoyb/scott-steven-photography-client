@@ -24,7 +24,7 @@ const images = [
 
 const ImageGallery = () => {
     return (
-        <div className='container mx-auto mt-12'>
+         <div className='container mx-auto mt-12'>
             <Masonry className=' px-12' columnsCount={3} gutter="10px">
                 {images.map((image, i) => (
                     <img alt=''
