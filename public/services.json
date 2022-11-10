@@ -1,0 +1,52 @@
+[
+    {
+        "service_id": "01",
+        "title": "LIFESTYLE PHOTOGRAPHY",
+        "img": "https://iso.500px.com/wp-content/uploads/2017/02/stock-photo-173806065.jpg",
+        "price": "300.00",
+        "description": "Lifestyle photography is a genre of photography that mainly aims to capture portraits of people in situations, real-life events or milestones in an artistic manner and the art of the everyday.The primary goal is to tell stories about people's lives or to inspire people in different times. Thus, it covers multidisciplinary types of photography together. Even though lifestyle photography is about telling a story and documenting the subject's natural environment, lighting and posing still plays a huge factor. Lifestyle photography is posed in an informal way such that the photographer gives some prompts and then documents the natural responses and candid moments that follow. Most lifestyle photographers prefer to position their subjects strategically in natural lighting for a “real-life” effect, but some often external lighting as well in a manner that looks as if it was pre-existing in the environment."
+        
+    },
+    {
+        "service_id": "02",
+        "title": "LANDSCAPE PHOTOGRAPHY",
+        "img": "https://photographylife.com/wp-content/uploads/2016/06/Mass.jpg",
+        "price": "250.00",
+        "description": "Landscape photography is a genre of photography that captures natural landscapes. While these landscapes may have people, animals or architecture present in the photos, the primary focus of the photograph must be natural scenery in order to be considered a landscape photograph. Subjects of these photographs include seascapes, mountain ranges, rivers, forests, and other natural landscapes.Landscape photography does not include views of cities, as these are considered city scapes. It also does not include close up photos of animals, as this is considered nature photography.  Landscape photography does include some astrophotography when those photographs include mountain ranges or other natural horizon lines where the sky meet nature"
+        
+    },
+    {
+        "service_id": "03",
+        "title": "WEDDING PHOTOGRAPHY",
+        "img": "https://www.linandjirsa.com/wp-content/uploads/010-galway-downs-temecula-wedding-photography-1000x667.jpg",
+        "price": "500.00",
+        "description": "Wedding photography is a specialty in photography that is primarily focused on the photography of events and activities relating to weddings. It may include other types of portrait photography of the couple before the official wedding day, such as a pre-wedding engagement session (photographs are later used for the couple wedding invitations). On the official wedding day, the photographer(s) will attempt to provide portrait photography, as well as documentary photography coverage to document the different wedding events and rituals throughout the wedding day(s)."
+        
+    },
+    {
+        "service_id": "04",
+        "title": "FASHION PHOTOGRAPHY",
+        "img": "https://www.telugubulletin.com/wp-content/uploads/2019/12/keerthy-suresh-1a.jpg",
+        "price": "1000.00",
+        "description": "Fashion photography focuses on the display of fashion clothing and items. It is most common on advertising boards and in fashion magazines. The photography will usually feature models wearing the display items.Fashion photography has existed almost as long as photography itself has been around. This type of photography has always changed with the times. Understanding new trends, creating new ones, and using past ones as inspiration are important techniques to learn.Photographers don’t just ensure that the correct photo has been taken; they also check the clothing, hair, and make-up of models.Magazines such as Vogue, Marie Claire, Harper’s Bazaar and more have budgets of millions of dollars to photograph in luxurious destinations."
+        
+    },
+    {
+        "service_id": "05",
+        "title": "BIRTHDAY PHOTOGRAPHY",
+        "img": "https://cdn.shortpixel.ai/spai/w_1008+q_glossy+ret_img+to_webp/https://anegabawa.com/wp-content/uploads/2019/08/33402-white-blue-cakesmash-photography-delhi-1-year-birthday-photoshoot-gurgaon-anega-bawa.jpg",
+        "price": "200.00",
+        "description": "Every year brings us new experiences. You develop in size, physical characters, and, most importantly, personality. You might have outgrown costume characters and bounces houses, but your birthday still makes you feel different and unique.The older you get, the more you fall into a never-ending grown-up rut. You bog down with work and other activities and forget to celebrate your life. Life easily gets in the way of your “Me Time” the whole year. Your birthday, however, is an excuse to put up feet, pause the routine activities, take a break from adulting for a day, and make memories."
+        
+    },
+    {
+        "service_id": "06",
+        "title": "ANIMAL PHOTOGRAPHY",
+        "img": "https://i2-prod.mirror.co.uk/incoming/article6753831.ece/ALTERNATES/s1200/Julian-Ghahreman-Rad-Austria-Entry-Nature-and-Wildlife-Open-2016-Sony-World-Photography-Awards.jpg",
+        "price": "400.00",
+        "description": "Animal photographers capture images of animals for use in commercial and artistic endeavors. They must have an eye for capturing balanced, interesting images of their animal subjects. They must also have knowledge of how to use various lenses, flashes, and other equipment to compensate for lighting conditions, weather conditions, and animal movement. Wildlife photography is a genre of photography that records the life of animals in their natural settings, like in a forest or underwater. So, wildlife photography often constitutes the images of animals in movement or action such as eating, fighting, or in flight."
+        
+    }
+    
+    
+]
