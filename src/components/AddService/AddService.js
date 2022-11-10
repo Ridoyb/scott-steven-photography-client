@@ -44,7 +44,10 @@ const AddService = () => {
 
 
     return (
-        
+        <div>
+            <Helmet>
+      <title>Add Service</title>
+    </Helmet>
             <form onSubmit={addService} className='mx-auto w-9/12 lg:w-6/12 ' >
 
 

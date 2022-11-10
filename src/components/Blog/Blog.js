@@ -4,9 +4,7 @@ import { Helmet } from 'react-helmet';
 const Blog = () => {
     return (
         <div className='mx-12'>
-            <Helmet>
-      <title>Blogs</title>
-    </Helmet>
+            
             <h2 className='text-center my-12 font-bold text-5xl '>Blogs</h2>
             <div className='container mx-auto  mb-12 p-3 border'>
                 <h3 className='text-2xl font-bold mb-2'>Difference between SQL and NoSQL</h3>
