@@ -143,7 +143,7 @@ const ServiceDetails = () => {
                     < >
                         <div className='text-center'>
                         <p className="font-bold  uppercase text-3xl text-center mb-12">Login to leave a comment!!!</p>
-                        <Link ><button className='btn btn-outline mb-12'> login</button></Link>
+                        <Link to='/login' ><button className='btn btn-outline mb-12'> login</button></Link>
                         </div>
                     </>
                 )

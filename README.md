@@ -1,5 +1,39 @@
 # Getting Started with Create React App
 
+
+### Name: Scott Steven Photography
+ Live link: [Firebase] ()
+
+ Features:
+ * Responsive Navbar
+ * Responsive website
+ * Data call from server side
+ * MongoDB Database
+ * Data add delete,add,modify system
+ * Manual email/password and Google login login/register
+ * image viewer
+ * Private Route
+ * Service details
+ * Comment system
+ * User data shown as user profile
+ * Blog
+
+
+
+ Frameworks:
+ * React
+ * Tailwind
+ * Daisy Ui
+ * Firebase
+ * React image view
+ * react Router Dom
+ * MongoDB
+ * Javascript
+ * CSS
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
