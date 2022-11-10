@@ -46,9 +46,9 @@ const Register = () => {
 
     return (
         <div>
-            <Helmet>
-                <title>Register</title>
-            </Helmet>
+                <Helmet>
+                    <title>Register</title>
+                </Helmet>
             <div className="hero mb-12  mt-12  ">
                 <div className="hero-content   ">
                     <div className="card  w-100 border max-w-sm shadow-2xl bg-base-100">
