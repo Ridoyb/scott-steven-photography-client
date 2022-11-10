@@ -8,7 +8,7 @@ const ServicesCard = ({service}) => {
         <PhotoProvider>
        
              <div className="card w-90  mx-4  bg-base-100 shadow-xl border home-card ">
-            <figure className="px-10 pt-10">
+                <figure className="px-10 pt-10">
             <PhotoView  src={img}>
                 <img src={img} alt="" className="rounded-2xl" />
             </PhotoView>
