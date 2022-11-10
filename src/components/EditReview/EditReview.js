@@ -40,9 +40,9 @@ const EditReview = () => {
     
     return (
         <div className='mt-8'>
-            <Helmet>
-                <title>Blogs</title>
-            </Helmet>
+                <Helmet>
+                 <title>Blogs</title>
+                </Helmet>
             
             <form onChange={handleUpdate} className='mx-auto w-9/12 lg:w-6/12  ' >
 
